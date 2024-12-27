@@ -1,0 +1,4 @@
+GitRepositoriesView.GitDirectories=D\:\\Training\\project-workspace\\bidder-service\\.git;D\:\\Training\\project-workspace\\insurance-service\\.git;D\:\\Training\\project-workspace\\eureka-server\\.git;D\:\\Training\\project-workspace\\admin-service\\.git;D\:\\Training\\project-workspace\\farmer-service\\.git;D\:\\Training\\project-workspace\\claim-service\\.git;
+GitRepositoriesView.GitDirectories.relative=bidder-service\\.git;insurance-service\\.git;eureka-server\\.git;admin-service\\.git;farmer-service\\.git;claim-service\\.git;
+core_autoIgnoreDerivedResources=false
+eclipse.preferences.version=1

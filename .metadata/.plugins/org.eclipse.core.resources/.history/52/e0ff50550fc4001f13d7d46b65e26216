@@ -1,0 +1,36 @@
+package com.coforge.training.agribid.insurance.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.CrossOrigin;
+
+import com.coforge.training.agribid.insurance.model.Claim;
+import com.coforge.training.agribid.insurance.model.Insurance;
+import com.coforge.training.agribid.insurance.repository.ClaimRepository;
+import com.coforge.training.agribid.insurance.repository.InsuranceRepository;
+
+
+@CrossOrigin(origins = "http://localhost:4200")
+@Service
+public class ClaimService {
+
+    @Autowired
+    private ClaimRepository claimRepository;
+
+    @Autowired
+    private InsuranceRepository insuranceRepository;
+
+    public Claim claimInsurance(Long policyId, Claim claim) {
+        Insurance insurance = insuranceRepository.findById(policyId).orElse(null);
+        if (insurance != null) {
+            claim.setInsurancePolicy(insurance);
+            return claimRepository.save(claim);
+        }
+        return null;
+    }
+
+    public Claim getClaimByPolicyId(Long policyId) {
+        return claimRepository.findById(policyId).orElse(null);
+    }
+}
+

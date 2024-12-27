@@ -1,0 +1,26 @@
+spring.application.name=apigateway-service
+server.port=8090
+eureka.client.service-url.defaultZone=http://localhost:8761/eureka
+ 
+#Configure routing for two microservices: product-service and order-service.
+spring.cloud.gateway.routes[0].id=farmer-service
+spring.cloud.gateway.routes[0].uri=lb://farmer-service
+spring.cloud.gateway.routes[0].predicates[0]=Path=/agribid/farmer-service/**
+ 
+spring.cloud.gateway.routes[1].id=bidder-service
+spring.cloud.gateway.routes[1].uri=lb://bidder-service
+spring.cloud.gateway.routes[1].predicates[0]=Path=/agribid/bidder-service/**
+ 
+ 
+spring.cloud.gateway.routes[2].id=insurance-service
+spring.cloud.gateway.routes[2].uri=lb://insurance-service
+spring.cloud.gateway.routes[2].predicates[0]=Path=/agribid/insurance-service/api/**
+ 
+ 
+spring.cloud.gateway.routes[3].id=claim-service
+spring.cloud.gateway.routes[3].uri=lb://claim-service
+spring.cloud.gateway.routes[3].predicates[0]=Path=/agribid/claim-service/api/**
+ 
+ 
+ 
+ 

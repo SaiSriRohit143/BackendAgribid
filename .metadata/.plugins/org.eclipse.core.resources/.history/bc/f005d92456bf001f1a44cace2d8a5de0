@@ -1,0 +1,107 @@
+package com.coforge.training.agribid.farmer.model;
+
+import java.time.LocalDateTime;
+
+public class DemoCrop1 {
+
+
+	private String cropName;
+	private double basePrice;
+	private double currentBid;
+	private LocalDateTime postedDateTime;
+	private int quantity;
+	private Long bid;
+	public DemoCrop1(String cropName, double basePrice, double currentBid, LocalDateTime postedDateTime, int quantity,
+			Long bid) {
+		super();
+		this.cropName = cropName;
+		this.basePrice = basePrice;
+		this.currentBid = currentBid;
+		this.postedDateTime = postedDateTime;
+		this.quantity = quantity;
+		this.bid = bid;
+	}
+	public String getCropName() {
+		return cropName;
+	}
+	public void setCropName(String cropName) {
+		this.cropName = cropName;
+	}
+	public double getBasePrice() {
+		return basePrice;
+	}
+	public void setBasePrice(double basePrice) {
+		this.basePrice = basePrice;
+	}
+	public double getCurrentBid() {
+		return currentBid;
+	}
+	public void setCurrentBid(double currentBid) {
+		this.currentBid = currentBid;
+	}
+	public LocalDateTime getPostedDateTime() {
+		return postedDateTime;
+	}
+	public void setPostedDateTime(LocalDateTime postedDateTime) {
+		this.postedDateTime = postedDateTime;
+	}
+	public int getQuantity() {
+		return quantity;
+	}
+	public void setQuantity(int quantity) {
+		this.quantity = quantity;
+	}
+	public Long getBid() {
+		return bid;
+	}
+	public void setBid(Long bid) {
+		this.bid = bid;
+	} 
+	
+	
+	
+	
+//	public DemoCrop1(String cropName, double basePrice, double currentBid, LocalDateTime postedDateTime, int quantity) {
+//		super();
+//		this.cropName = cropName;
+//		this.basePrice = basePrice;
+//		this.currentBid = currentBid;
+//		this.postedDateTime = postedDateTime;
+//		this.quantity = quantity;
+//	}
+//	public String getCropName() {
+//		return cropName;
+//	}
+//	public void setCropName(String cropName) {
+//		this.cropName = cropName;
+//	}
+//	public double getBasePrice() {
+//		return basePrice;
+//	}
+//	public void setBasePrice(double basePrice) {
+//		this.basePrice = basePrice;
+//	}
+//	public double getCurrentBid() {
+//		return currentBid;
+//	}
+//	public void setCurrentBid(double currentBid) {
+//		this.currentBid = currentBid;
+//	}
+//	public LocalDateTime getPostedDateTime() {
+//		return postedDateTime;
+//	}
+//	public void setPostedDateTime(LocalDateTime postedDateTime) {
+//		this.postedDateTime = postedDateTime;
+//	}
+//	public int getQuantity() {
+//		return quantity;
+//	}
+//	public void setQuantity(int quantity) {
+//		this.quantity = quantity;
+//	}
+
+	
+
+	// Getters and setters
+	
+}
